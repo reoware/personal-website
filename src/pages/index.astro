@@ -1,0 +1,184 @@
+---
+import Layout from "../layouts/Layout.astro";
+import AnimatedScroll from "../components/AnimatedScroll";
+import Spotify from "../components/Spotify";
+---
+
+<Layout title="Hello, I'm reo!">
+	<!-- hero -->
+	<AnimatedScroll client:load>
+		<div class="w-full px-16 pb-40 pt-96">
+			<div class="flex space-between justify-center gap-48">
+				<div class="space-y-4">
+					<p class="text-text-main text-6xl font-medium">Hello! I'm reo! </span></p>
+					<p class="text-text-muted text-xl">I'm an 16 year old <i id="typing"></i> from Ontario, Canada.</p>
+					<div class="flex items-center gap-4">
+						<a href="https://www.youtube.com/@skillrunsyou" target="_blank" class="text-white px-8 py-2 rounded-lg shadow-lg bg-[#ff0000] bg-opacity-50 border border-[#ff0000] duration-200 hover:opacity-65 duration-200 hover:-translate-y-1">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="1.99 5 20.01 14.01" class="h-6 w-6 fill-white">
+								<path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765c1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6l5.207 3.005l-5.212 2.995z"></path>
+							</svg>
+						</a>
+						<a href="https://github.com/reoware" target="_blank" class="text-white px-8 py-2 rounded-lg shadow-lg bg-card-background/50 backdrop-blur-lg border border-border duration-200 hover:opacity-65 duration-200 hover:-translate-y-1">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="h-6 w-6 fill-white">
+								<path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+							</svg>
+						</a>
+						<a href="https://www.instagram.com/silncse/" target="_blank" class="text-white px-8 py-2 rounded-lg shadow-lg bg-[#800080] bg-opacity-50 border border-[#800080] duration-200 hover:opacity-65 duration-200 hover:-translate-y-1">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-white" viewBox="0 0 16 16">
+								<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+							  </svg>
+						</a>
+					</div>
+				</div>
+				<div>
+					<img src="\pfp.png" class="h-[14rem] w-[14rem] rounded-full shadow-lg border border-border object-cover" draggable="false" />
+				</div>
+			</div>
+			<div class="flex justify-center animate-bounce pt-8">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-8 fill-text-main">
+					<path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+				</svg>                  
+			</div>
+		</div>
+	</AnimatedScroll>
+
+	<!-- projects -->
+	<AnimatedScroll client:load>
+		<div id="projects" class="w-full gap-4 px-16 pb-40 pt-40 text-center flex justify-center">
+			<div class="space-y-4">
+				<p class="text-text-main text-5xl font-medium">My Projects</p>
+				<p class="text-text-muted text-xl">Stuff i've been working on.</p>
+				<div class="mt-4 mb-4 border-b border-border"></div>
+				<div class="grid grid-cols-2 gap-4">
+					<div class="rounded-lg shadow-lg bg-card-background/50 backdrop-blur-lg border border-border w-96 duration-200 hover:-translate-y-1">
+						<div>
+							<img src="/personal-website.png" alt="personal website" draggable="false" class="rounded-t-lg shadow-lg h-[185px] w-[385px]" />
+						</div>
+						<div class="space-y-2 px-8 py-4">
+							<p class="text-left text-3xl font-medium text-text-main">Personal Website</p>
+							<p class="text-left text-text-muted">I made this to show off my skills on here and also because I was bored.</p>
+							<div class="flex items-center gap-4">
+								<span class="rounded-full bg-card-background/50 border border-border text-text-main px-4 py-0.5 text-sm">Astro</span>
+								<span class="rounded-full bg-card-background/50 border border-border text-text-main px-4 py-0.5 text-sm">React</span>
+								<span class="rounded-full bg-card-background/50 border border-border text-text-main px-4 py-0.5 text-sm">Tailwind CSS</span>
+							</div>
+							<a href="https://github.com/reoware/reos-personal-website" target="_blank" class="text-white px-8 py-2 rounded-lg shadow-lg bg-card-background/50 backdrop-blur-lg border border-border duration-200 hover:opacity-65 flex items-center justify-center gap-2">
+								<span>Source Code</span>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 fill-white">
+									<path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z" clip-rule="evenodd" />
+									<path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 0 0 1.06.053L16.5 4.44v2.81a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-.75-.75h-4.5a.75.75 0 0 0 0 1.5h2.553l-9.056 8.194a.75.75 0 0 0-.053 1.06Z" clip-rule="evenodd" />
+								</svg>									  
+							</a>
+						</div>
+					</div>
+					<div class="rounded-lg shadow-lg bg-card-background/50 backdrop-blur-lg border border-border w-96 duration-200 hover:-translate-y-1">
+						<div>
+							<img src="/xaphan.png" alt="sparkle " draggable="false" class="rounded-t-lg shadow-lg h-[185px] w-[385px]" />
+						</div>
+						<div class="space-y-2 px-8 py-4">
+							<p class="text-left text-3xl font-medium text-text-main">Xaphan</p>
+							<p class="text-left text-text-muted">A data intelligence bot. I have been working on for a while now.</p>
+							<div class="flex items-center gap-4">
+								<span class="rounded-full bg-card-background/50 border border-border text-text-main px-4 py-0.5 text-sm">Python</span>
+								<span class="rounded-full bg-card-background/50 border border-border text-text-main px-4 py-0.5 text-sm">DiscordPy</span>
+							</div>
+							<a class="text-white px-8 py-2 rounded-lg shadow-lg bg-card-background/50 backdrop-blur-lg border border-border duration-200 opacity-65 flex items-center justify-center gap-2 cursor-not-allowed">
+								<span>Source Code</span>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 fill-white">
+									<path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z" clip-rule="evenodd" />
+									<path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 0 0 1.06.053L16.5 4.44v2.81a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-.75-.75h-4.5a.75.75 0 0 0 0 1.5h2.553l-9.056 8.194a.75.75 0 0 0-.053 1.06Z" clip-rule="evenodd" />
+								</svg>									  
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</AnimatedScroll>
+
+	<!-- skills -->
+	<AnimatedScroll client:load>
+		<div id="skills" class="w-full gap-4 px-16 pb-40 pt-10 text-center flex justify-center">
+			<div class="space-y-4">
+				<p class="text-text-main text-5xl font-medium">What are my skills?</p>
+				<p class="text-text-muted text-xl">I've got no idea</p>
+				<div class="mt-4 mb-4 border-b border-border"></div>
+				<div class="grid grid-cols-2 gap-4">
+					<div class="relative rounded-lg shadow-lg bg-card-background/50 backdrop-blur-lg border border-border px-8 py-4 w-96 duration-200 hover:-translate-y-1">
+						<div class="absolute inset-0 opacity-35 bg-[url(/react.png)] bg-no-repeat bg-right-top bg-contain blur"></div>
+						<div class="relative z-10 space-y-2">
+							<p class="text-left text-3xl font-medium text-text-main">Web Development</p>
+							<p class="text-left text-text-muted">I have been messing with web development for around 6 months now.</p>
+						</div>
+					</div>
+					<div class="relative rounded-lg shadow-lg bg-card-background/50 backdrop-blur-lg border border-border px-8 py-4 w-96 duration-200 hover:-translate-y-1">
+						<div class="absolute inset-0 opacity-35 bg-[url(/discord.png)] bg-no-repeat bg-right-top bg-contain blur"></div>
+						<div class="relative z-10 space-y-2">
+							<p class="text-left text-3xl font-medium text-text-main">Bot Development</p>
+							<p class="text-left text-text-muted">I make Discord bots occasionally. I'm currently working on my project "Xaphan" a data intelligence bot.</p>
+						</div>
+					</div>
+					<div class="relative rounded-lg shadow-lg bg-card-background/50 backdrop-blur-lg border border-border px-8 py-4 w-96 duration-200 hover:-translate-y-1">
+						<div class="absolute inset-0 opacity-35 bg-[url(/School.png)] bg-no-repeat bg-right-top bg-contain blur"></div>
+						<div class="relative z-10 space-y-2">
+							<p class="text-left text-text-main text-3xl font-medium">School</p>
+							<p class="text-left text-text-muted">I'm a stright A student with honors working towards becoming a teaching and teaching in a foreign country. Hopfully in South Korea. </p>
+						</div>
+					</div>
+					<div class="relative rounded-lg shadow-lg bg-card-background/50 backdrop-blur-lg border border-border px-8 py-4 w-96 duration-200 hover:-translate-y-1">
+						<div class="absolute inset-0 opacity-35 bg-[url(/aftereffects.png)] bg-no-repeat bg-right-top bg-contain blur"></div>
+						<div class="relative z-10 space-y-2">
+							<p class="text-left text-text-main text-3xl font-medium">Video Editing</p>
+							<p class="text-left text-text-muted">I have been video editing on after effects for around a year now. It's fun and I always seem to go back to it like a minecraft phase.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</AnimatedScroll>
+
+	<!-- discord spotify status -->
+	<Spotify client:load />
+</Layout>
+
+<script is:inline>
+	const roles = ["sigma", "editor", "developer"];
+	const typing = document.getElementById("typing");
+	let roleIndex = 0;
+	let charIndex = 0;
+	let isDeleting = 0;
+	const typingSpeed = 100;
+	const deletingSpeed = 50;
+	const pauseAfterTyping = 1500;
+	const pauseBeforeTyping = 500;
+
+	const typingEffect = () => {
+		const currentText = roles[roleIndex];
+		const visibleText = currentText.substring(0, charIndex);
+
+		typing.textContent = visibleText;
+
+		if (!isDeleting) {
+			if (charIndex < currentText.length) {
+				charIndex++;
+				setTimeout(typingEffect, typingSpeed);
+			} else {
+				setTimeout(() => {
+					isDeleting = true;
+					typingEffect();
+				}, pauseAfterTyping);
+			}
+		} else {
+			if (charIndex > 0) {
+				charIndex--;
+				setTimeout(typingEffect, deletingSpeed);
+			} else {
+				isDeleting = false;
+				roleIndex = (roleIndex + 1) % roles.length;
+				setTimeout(typingEffect, pauseBeforeTyping);
+			}
+		}
+	};
+
+	setTimeout(typingEffect, pauseBeforeTyping);
+</script>

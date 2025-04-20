@@ -1,0 +1,21 @@
+.dark {
+    --background: linear-gradient(to top left, rgb(39, 0, 90) 0%, rgb(38, 34, 79) 50%, rgb(26, 26, 50) 100%);
+    --card-background: 54, 54, 54;
+    --border: 66, 69, 73;
+
+    --text-main: 255, 255, 255;
+    --text-muted: 209, 213, 219;
+
+    background: var(--background);
+}
+
+.light {
+    --background: linear-gradient(to top left, #ffffff 0%, #ff9696 100%);
+    --card-background: 190, 190, 190;
+    --border: 200, 200, 200;
+    
+    --text-main: 0, 0, 0;
+    --text-muted: 50, 50, 50;
+
+    background: var(--background);
+}
